@@ -1,0 +1,80 @@
+name: personal-ops-temporal
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+x-sql: &sql
+  DB: postgres12
+  DB_PORT: "5432"
+  POSTGRES_USER: temporal
+  POSTGRES_PWD: ${TEMPORAL_DB_PASSWORD:?Run scripts/configure.sh}
+  POSTGRES_SEEDS: postgres
+  DBNAME: temporal
+  VISIBILITY_DBNAME: temporal_visibility
+services:
+  postgres:
+    image: postgres:16.16-bookworm
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/configure.sh}
+      TEMPORAL_DB_PASSWORD: ${TEMPORAL_DB_PASSWORD:?Run scripts/configure.sh}
+    command: ["postgres", "-c", "shared_buffers=128MB", "-c", "max_connections=100"]
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./postgres/init.sh:/docker-entrypoint-initdb.d/10-init.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U postgres -d postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    logging: *logging
+  temporal:
+    image: temporalio/server:1.31.5
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      <<: *sql
+      ENABLE_ES: "false"
+      BIND_ON_IP: 0.0.0.0
+      NUM_HISTORY_SHARDS: "4"
+      LOG_LEVEL: info
+    ports:
+      - "127.0.0.1:7233:7233"
+    healthcheck:
+      test: ["CMD", "nc", "-z", "127.0.0.1", "7233"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+      start_period: 30s
+    logging: *logging
+  ui:
+    image: temporalio/ui:2.58.1
+    restart: unless-stopped
+    depends_on:
+      temporal:
+        condition: service_healthy
+    environment:
+      TEMPORAL_ADDRESS: temporal:7233
+    ports:
+      - "127.0.0.1:8080:8080"
+    logging: *logging
+  admin:
+    image: temporalio/admin-tools:1.31.5
+    profiles: [tools]
+    environment:
+      <<: *sql
+      SQL_PASSWORD: ${TEMPORAL_DB_PASSWORD:?Run scripts/configure.sh}
+      TEMPORAL_ADDRESS: temporal:7233
+    entrypoint: ["/bin/sh"]
+    volumes:
+      - ./scripts/schema.sh:/scripts/schema.sh:ro
+    logging: *logging
+volumes:
+  postgres-data:
+networks:
+  default:
+    name: personal-ops-temporal

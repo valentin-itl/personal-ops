@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+**/backups/
+/data/
+/career/passport.json
+**/bin/
+**/obj/
+*.pem
+*.key
+
+*.dump
+*.age

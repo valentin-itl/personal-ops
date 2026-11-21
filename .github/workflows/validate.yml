@@ -1,0 +1,41 @@
+name: Validate Temporal infrastructure
+on:
+  push:
+    paths: ['infrastructure/temporal/**', '.github/workflows/validate.yml']
+  pull_request:
+    paths: ['infrastructure/temporal/**', '.github/workflows/validate.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: infrastructure/temporal
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate scripts and Compose
+        run: |
+          for f in scripts/*.sh; do bash -n "$f"; done
+          sh -n postgres/init.sh scripts/schema.sh
+          bash scripts/configure.sh
+          docker compose config --quiet
+      - name: Bootstrap and verify
+        run: |
+          bash scripts/bootstrap.sh
+          bash scripts/verify.sh
+      - name: Backup and restore on clean CI volume
+        run: |
+          bash scripts/backup.sh --leave-stopped
+          # Ephemeral CI runner only. Never run down -v on a live VPS.
+          docker compose down -v
+          bash scripts/restore.sh "$(find "$PWD/backups" -mindepth 1 -maxdepth 1 -type d -print -quit)"
+          bash scripts/verify.sh
+      - name: Logs on failure
+        if: failure()
+        run: docker compose logs --tail=150
+      - name: Cleanup ephemeral CI resources
+        if: always()
+        run: docker compose down -v --remove-orphans
