@@ -1,0 +1,3717 @@
+{
+  "$schema": "career-passport.v1.0.schema.json",
+  "schema_version": "1.0.0",
+  "last_reviewed": "2026-11-21",
+  "meta": {
+    "purpose": "Private, evidence-backed career source of truth for tailored profiles, opportunity matching, and learning decisions",
+    "default_visibility": "private",
+    "quality_policy": "Never promote inferred claims to confirmed without owner review; public exports require explicit approval",
+    "draft_status": "v1_owner_interview_completed; historical details source-reported and disclosure-restricted",
+    "source_priority": "Uploaded CV for detailed timeline and project descriptions; uploaded LinkedIn PDF for exact LinkedIn titles, affiliate-marketing period and ML claims; pasted LinkedIn skills/courses as profile listings, not independently verified proficiency; conversations for recent private work.",
+    "matching_safety_rule": "LinkedIn skill listings, course titles, and role associations are not sufficient to mark a technical skill as production-proven.",
+    "readiness": "suitable_for_job_matching_and_draft_resume_projections",
+    "review_policy": "Owner-approved self-assessment can guide private matching, but public career claims must use documented experience or explicit review; scores and private traits never exported automatically.",
+    "provenance_policy": "Keep source-reported facts, owner-approved self-assessments, and inferred hypotheses separate."
+  },
+  "identity": {
+    "preferred_name": "Valentin Vladiko",
+    "country": "Latvia",
+    "public_links": [
+      {
+        "label": "CPA.express",
+        "url": "https://cpa.express",
+        "verification": "reported"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/valentinvladiko/",
+        "verification": "reported"
+      }
+    ],
+    "contact": {
+      "email": "vvladiko@gmail.com",
+      "phone": "+371-26498696",
+      "visibility": "private",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ]
+    },
+    "review_status": "reported_from_cv"
+  },
+  "career_direction": {
+    "current_focus": "CPA.express founder/product operator; independent systems/product engineering and AI-assisted delivery",
+    "target_directions": [
+      "Founder and product operator (CPA.express)",
+      "Senior/Staff-level individual-contributor engineering and systems architecture",
+      "AI-native product engineering / workflow automation"
+    ],
+    "narrative": "Experienced software engineer and founder using backend, workflow and architecture expertise to build products and acquire adjacent AI orchestration skills. Prefers hands-on autonomous contributor work over people management.",
+    "review_status": "owner_accepted_2026_11_21",
+    "goals": [
+      {
+        "id": "career.goal.cpa",
+        "priority": "primary",
+        "goal": "Make CPA.express a viable SaaS business"
+      },
+      {
+        "id": "career.goal.freelance",
+        "priority": "high",
+        "goal": "Increase income through independent part-time contracts"
+      },
+      {
+        "id": "career.goal.marketability",
+        "priority": "high",
+        "goal": "Maintain ability to qualify for well-paid senior engineering employment"
+      }
+    ]
+  },
+  "education": [
+    {
+      "id": "education.lu_bsc",
+      "institution": "University of Latvia",
+      "program": "Computer Science",
+      "degree": "B.Sc.",
+      "start_date": "1999",
+      "end_date": "2003",
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_public_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ]
+    },
+    {
+      "id": "education.lu_msc",
+      "institution": "University of Latvia",
+      "program": "Computer Science",
+      "degree": "M.Sc.",
+      "start_date": "2003",
+      "end_date": "2005",
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_public_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ]
+    }
+  ],
+  "employment": [
+    {
+      "id": "employment.exigen",
+      "organization": "Exigen Latvia AS",
+      "position": "Programmer",
+      "start_date": "2001-07",
+      "end_date": "2006-06",
+      "summary": "Participated in development and maintenance of VisiFLOW workflow and document management system for mainly US customers; maintained C++ libraries, SAL desktop applications, and Java/JSP web applications.",
+      "project_ids": [
+        "project.visiflow"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_public_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ],
+      "verification": "owner_verified",
+      "visibility": "private"
+    },
+    {
+      "id": "employment.itis_2006_2013",
+      "organization": "ITIS SIA",
+      "position": "Software Engineer",
+      "start_date": "2006-06",
+      "end_date": "2013-07",
+      "summary": "Built a workflow solution for a printing house, directly engaged with the customer on requirements, presentations, installation and user training. Participated in DexFLOW development and designed modular, scriptable backend document-processing automation including barcode and OCR indexing.",
+      "project_ids": [
+        "project.print_house_workflow",
+        "project.dexflow",
+        "project.dexflow_client_solutions"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ],
+      "verification": "owner_verified",
+      "visibility": "private",
+      "source_specific_titles": {
+        "uploaded_resume": "Software Engineer",
+        "linkedin_pdf": "Lead Software Engineer (single ITIS entry, June 2006–Present)"
+      },
+      "notes": "LinkedIn combines ITIS tenure into one Lead Software Engineer entry; CV separates Software Engineer (2006–2013) and Senior Software Engineer (2013–Present). Do not treat these titles as verified simultaneous titles."
+    },
+    {
+      "id": "employment.itis",
+      "organization": "ITIS SIA",
+      "position": "Senior Software Engineer",
+      "start_date": "2013-07",
+      "end_date": null,
+      "summary": "CV describes leading a two-developer team on a Polish debt-management product, implementing an e-commerce integration, independently developing a niche social network, and developing/leading a lending platform. Current employment status/date must be reconfirmed.",
+      "project_ids": [
+        "project.debt_management",
+        "project.frozen_meals",
+        "project.social_network",
+        "project.lending_platform"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_public_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "source_specific_titles": {
+        "uploaded_resume": "Senior Software Engineer",
+        "linkedin_pdf": "Lead Software Engineer (single ITIS entry, June 2006–Present)"
+      },
+      "notes": "LinkedIn combines ITIS tenure into one Lead Software Engineer entry; CV separates Software Engineer (2006–2013) and Senior Software Engineer (2013–Present). Do not treat these titles as verified simultaneous titles."
+    },
+    {
+      "id": "employment.marketer",
+      "organization": "Self-employed",
+      "position": "Affiliate Marketer",
+      "start_date": "2016-12",
+      "end_date": "2024-12",
+      "summary": "LinkedIn describes hobby-level CPA marketing and traffic arbitrage using a personally developed funnel-management, click-tracking and reporting platform; integration with SSPs for impression/cost reporting; regression for traffic volume/cost forecasting and modified DQN reinforcement learning for funnel optimization. Do not imply formal outside employment or profit figures.",
+      "project_ids": [
+        "project.personal_affiliate_tracking"
+      ],
+      "source_ids": [
+        "source.linkedin_pdf_uploaded_2026_11_21",
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "engagement_type": "self_employed_hobby_level",
+      "notes": "Overlapped with employment at ITIS; timeframe reflects LinkedIn affiliate-marketing entry, not necessarily uninterrupted daily activity."
+    },
+    {
+      "id": "employment.itligence",
+      "organization": "SIA ITligence",
+      "position": "Founder",
+      "start_date": "2023-10",
+      "end_date": null,
+      "summary": "Founder/owner of SIA ITligence (company established October 2023), developing CPA.express. Founding/ownership is not proof of an employment contract.",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "source_ids": [
+        "source.user_prior_conversations"
+      ],
+      "verification": "reported",
+      "visibility": "private"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project.visiflow",
+      "name": "VisiFLOW",
+      "summary": "Workflow and document management product developed/maintained in a larger Exigen team primarily for US customers. CV cites low-level C++ libraries, SAL desktop applications, and Java/JSP web applications.",
+      "role": "Team contributor / developer and maintainer",
+      "organization_id": "employment.exigen",
+      "start_date": null,
+      "end_date": null,
+      "technology_ids": [
+        "tech.cpp",
+        "tech.sal",
+        "tech.java",
+        "tech.jsp"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.user_2026_11_20"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": [],
+      "work_examples": [
+        "Maintained and developed C++ libraries",
+        "Worked on SAL desktop applications and Java/JSP web components"
+      ]
+    },
+    {
+      "id": "project.dexflow",
+      "name": "DexFLOW",
+      "summary": "Workflow and document-management system developed at ITIS. Personally designed and implemented a scriptable modular backend automation framework and reusable batch-processing modules for barcode/OCR indexing, import and conversion.",
+      "role": "Developer; backend automation framework designer and implementer (per CV)",
+      "organization_id": "employment.itis_2006_2013",
+      "start_date": null,
+      "end_date": null,
+      "technology_ids": [
+        "tech.dotnet",
+        "tech.mssql",
+        "tech.office_automation"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.user_2026_11_20"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": [],
+      "work_examples": [
+        "Designed modular scriptable backend automation framework",
+        "Reusable batch processing modules for barcode indexing, OCR indexing, import, and conversion"
+      ]
+    },
+    {
+      "id": "project.cpa_express",
+      "name": "CPA.express",
+      "summary": "Founder-led affiliate-tracking SaaS centered on versioned funnels, routing, conversions, releases and server-side analytics.",
+      "role": "Founder / product and systems architect (owner-described)",
+      "organization_id": "employment.itligence",
+      "start_date": null,
+      "end_date": null,
+      "technology_ids": [
+        "tech.dotnet",
+        "tech.postgresql",
+        "tech.kafka",
+        "tech.redis",
+        "tech.rocksdb",
+        "tech.starrocks",
+        "tech.nextjs",
+        "tech.docker"
+      ],
+      "source_ids": [
+        "source.user_prior_conversations"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": [],
+      "work_examples": [
+        "Event-driven conversion pipeline",
+        "Versioned funnel publishing",
+        "Server-side analytics and operational diagnostics"
+      ]
+    },
+    {
+      "id": "project.ai_dev_runner",
+      "name": "AI Dev Runner",
+      "summary": "Personal AI-assisted software development runner/implementation-series system. Owner designed requirements, implementation workflow and review model and operated the system; most implementation was generated through coding assistants (vibe coded). Not evidence of hands-on LLM API or agent framework engineering.",
+      "role": "Workflow/spec designer and operator; AI-generated implementation with limited manual coding",
+      "organization_id": null,
+      "start_date": null,
+      "end_date": null,
+      "technology_ids": [
+        "tech.dotnet",
+        "tech.azure_devops"
+      ],
+      "source_ids": [
+        "source.user_prior_conversations"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": []
+    },
+    {
+      "id": "project.print_house_workflow",
+      "name": "Printing-house workflow solution",
+      "summary": "Independently developed a workflow solution for a printing house; worked directly with customer representatives; led company-wide presentations, setup and employee training.",
+      "role": "Independent developer and customer-facing implementer",
+      "organization_id": "employment.itis_2006_2013",
+      "technology_ids": [],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": [],
+      "work_examples": [
+        "Requirements alignment with customers",
+        "Workstation setup and end-user training"
+      ]
+    },
+    {
+      "id": "project.dexflow_client_solutions",
+      "name": "DexFLOW customer solutions",
+      "summary": "Developed tailored solutions in a team for US insurance, judicial, and educational organizations using the DexFLOW platform.",
+      "role": "Team developer",
+      "organization_id": "employment.itis_2006_2013",
+      "technology_ids": [
+        "tech.dotnet",
+        "tech.mssql"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": []
+    },
+    {
+      "id": "project.debt_management",
+      "name": "Polish debt-management and e-court solution",
+      "summary": "Led a team of two developers in a debt-management solution integrated with the Polish electronic court system. Automates court and bailiff lawsuit submissions, tracks cases, and manages debt/court fee financial information.",
+      "role": "Lead developer; backend and frontend implementation",
+      "organization_id": "employment.itis",
+      "technology_ids": [
+        "tech.dotnet",
+        "tech.aspnet_core",
+        "tech.react",
+        "tech.nextjs",
+        "tech.devextreme",
+        "tech.rest"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": [
+        "CV reports significant reduction of manual work relative to an established competitor; no independently verified quantitative metric."
+      ],
+      "work_examples": [
+        "C# backend and ASP.NET Core REST API",
+        "React/Next.js frontend with DevExtreme",
+        "Led team of two developers"
+      ]
+    },
+    {
+      "id": "project.frozen_meals",
+      "name": "Frozen-meals e-commerce integration",
+      "summary": "Customized nopCommerce (.NET Core) for a frozen-meals business and integrated with Cin7 inventory management.",
+      "role": "Contributor",
+      "organization_id": "employment.itis",
+      "technology_ids": [
+        "tech.dotnet",
+        "tech.nopcommerce",
+        "tech.cin7"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": []
+    },
+    {
+      "id": "project.social_network",
+      "name": "Niche social network",
+      "summary": "Independently developed a niche social-network application with an ASP.NET Core GraphQL backend, jQuery frontend, Orchard Core CMS, self-hosted Ceph object storage and Matrix chat ecosystem.",
+      "role": "Independent developer",
+      "organization_id": "employment.itis",
+      "technology_ids": [
+        "tech.dotnet",
+        "tech.aspnet_core",
+        "tech.graphql",
+        "tech.jquery",
+        "tech.orchard_core",
+        "tech.ceph",
+        "tech.matrix"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": []
+    },
+    {
+      "id": "project.lending_platform",
+      "name": "Multi-country lending platform",
+      "summary": "Developed and launched backend, frontend and back office of a lending platform; later led a small team enhancing and supporting the full-loan-lifecycle system serving two clients across four European countries.",
+      "role": "Initial full-stack developer; subsequently team lead",
+      "organization_id": "employment.itis",
+      "technology_ids": [
+        "tech.dotnet",
+        "tech.aspnet",
+        "tech.razor",
+        "tech.devexpress"
+      ],
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": [
+        "CV reports use by two clients in four European countries."
+      ],
+      "work_examples": [
+        "Initial implementation and launch",
+        "Team leadership during system expansion"
+      ]
+    },
+    {
+      "id": "project.personal_affiliate_tracking",
+      "name": "Personal affiliate-marketing tracking and optimization platform",
+      "summary": "Self-developed platform supporting funnel management, click tracking and reporting for hobby-level CPA marketing/traffic arbitrage, with SSP integrations for impression and cost accuracy. Explored ML regression forecasts and a modified DQN agent for automated funnel optimization. Owner clarifies that the modified DQN work used TorchSharp and was experimental rather than production-quality. Delayed rewards made the approach unsuitable for the particular optimization task; switched to a conventional deep neural network without online learning. The replacement neural network used primarily GEO and device attributes to select routing through own landing pages versus directly to the advertiser. It was used on real paid traffic and periodically retrained on all available data.",
+      "role": "Independent builder and affiliate marketer (owner-reported on LinkedIn)",
+      "organization_id": "employment.marketer",
+      "start_date": null,
+      "end_date": null,
+      "technology_ids": [
+        "tech.torchsharp"
+      ],
+      "source_ids": [
+        "source.linkedin_pdf_uploaded_2026_11_21",
+        "source.owner_ml_interview_2026_11_21",
+        "source.owner_ml_live_traffic_interview_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "outcomes": [
+        "Identified delayed rewards as a practical limitation of the experimental RL approach and switched to a conventional deep neural network without online learning.",
+        "After more than 1,000 leads, direct-to-advertiser routing was observed to be more profitable; owner concluded the neural network was unnecessary for this task. No profit amounts, uplift, controlled comparison design or statistical significance supplied."
+      ],
+      "work_examples": [
+        "Integrated SSP feeds for impression and cost reporting",
+        "Applied regression to volume and cost prediction",
+        "Experimented with modified deep Q-network (DQN) reinforcement learning for funnel optimization",
+        "Evaluated an experimental TorchSharp RL implementation and changed model approach based on delayed-reward constraints.",
+        "Formulated route selection using mainly GEO and device features as a neural-network task.",
+        "Used the conventional neural network on actual paid traffic and periodically retrained it on all available data.",
+        "Evaluated observed commercial profitability and concluded the neural network was unnecessary for this task."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.workflow_engineering",
+      "name": "Business workflow engine development",
+      "category": "architecture",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.visiflow",
+        "project.dexflow"
+      ],
+      "evidence_ids": [
+        "evidence.workflow_history",
+        "evidence.dexflow_framework",
+        "evidence.exigen_work"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.distributed_systems",
+      "name": "Distributed systems architecture",
+      "category": "architecture",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "evidence_ids": [
+        "evidence.cpa_architecture"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.event_driven",
+      "name": "Event-driven processing and integration",
+      "category": "engineering",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "evidence_ids": [
+        "evidence.cpa_architecture"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.product_engineering",
+      "name": "Product engineering and problem decomposition",
+      "category": "product",
+      "claim_status": "inferred",
+      "project_ids": [
+        "project.cpa_express",
+        "project.print_house_workflow",
+        "project.lending_platform"
+      ],
+      "evidence_ids": [
+        "evidence.cpa_architecture"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.ai_assisted_delivery",
+      "name": "AI-assisted software development workflow design",
+      "category": "ai_engineering",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.ai_dev_runner"
+      ],
+      "evidence_ids": [
+        "evidence.ai_dev_runner"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.customer_delivery",
+      "name": "Customer requirements, deployment and training",
+      "category": "delivery",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.print_house_workflow"
+      ],
+      "evidence_ids": [
+        "evidence.print_house_customer_delivery"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.small_team_leadership",
+      "name": "Leading small engineering teams",
+      "category": "leadership",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.debt_management",
+        "project.lending_platform"
+      ],
+      "evidence_ids": [
+        "evidence.debt_management",
+        "evidence.lending_platform"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.fullstack_delivery",
+      "name": "End-to-end full-stack product delivery",
+      "category": "engineering",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.lending_platform",
+        "project.social_network",
+        "project.debt_management"
+      ],
+      "evidence_ids": [
+        "evidence.lending_platform",
+        "evidence.social_network"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.enterprise_integrations",
+      "name": "Enterprise and third-party system integrations",
+      "category": "engineering",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.debt_management",
+        "project.frozen_meals"
+      ],
+      "evidence_ids": [
+        "evidence.debt_management",
+        "evidence.frozen_meals"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.document_processing",
+      "name": "Document processing and workflow automation",
+      "category": "engineering",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.dexflow"
+      ],
+      "evidence_ids": [
+        "evidence.dexflow_framework"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.affiliate_marketing",
+      "name": "Affiliate marketing and traffic arbitrage",
+      "category": "domain",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.personal_affiliate_tracking"
+      ],
+      "evidence_ids": [
+        "evidence.affiliate_ml_linkedin",
+        "evidence.affiliate_ml_live_traffic"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.machine_learning",
+      "name": "Applied machine learning and regression",
+      "category": "ml",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.personal_affiliate_tracking"
+      ],
+      "evidence_ids": [
+        "evidence.affiliate_ml_linkedin",
+        "evidence.affiliate_ml_owner_interview",
+        "evidence.affiliate_ml_live_traffic"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.reinforcement_learning",
+      "name": "Reinforcement learning (modified DQN experimentation)",
+      "category": "ml",
+      "claim_status": "owner_verified",
+      "project_ids": [
+        "project.personal_affiliate_tracking"
+      ],
+      "evidence_ids": [
+        "evidence.affiliate_ml_linkedin",
+        "evidence.affiliate_ml_owner_interview"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.deep_learning",
+      "name": "Applied deep neural networks (live affiliate traffic experimentation)",
+      "category": "ml",
+      "claim_status": "owner_verified",
+      "project_ids": [
+        "project.personal_affiliate_tracking"
+      ],
+      "evidence_ids": [
+        "evidence.affiliate_ml_owner_interview",
+        "evidence.affiliate_ml_live_traffic"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.traffic_analytics",
+      "name": "Traffic tracking, cost analytics and reporting",
+      "category": "domain",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.personal_affiliate_tracking",
+        "project.cpa_express"
+      ],
+      "evidence_ids": [
+        "evidence.affiliate_ml_linkedin",
+        "evidence.cpa_architecture"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.image_processing",
+      "name": "Document image processing",
+      "category": "engineering",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.visiflow",
+        "project.dexflow"
+      ],
+      "evidence_ids": [
+        "evidence.exigen_work",
+        "evidence.dexflow_framework"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.document_management",
+      "name": "Document management systems",
+      "category": "domain",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.visiflow",
+        "project.dexflow"
+      ],
+      "evidence_ids": [
+        "evidence.exigen_work",
+        "evidence.dexflow_framework"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.api_engineering",
+      "name": "Web API design and implementation",
+      "category": "engineering",
+      "claim_status": "reported",
+      "project_ids": [
+        "project.debt_management",
+        "project.social_network",
+        "project.cpa_express"
+      ],
+      "evidence_ids": [
+        "evidence.debt_management",
+        "evidence.social_network",
+        "evidence.cpa_architecture"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.ml_model_selection",
+      "name": "Applied ML experimentation and model selection (live-traffic case study)",
+      "category": "ml",
+      "claim_status": "owner_verified",
+      "project_ids": [
+        "project.personal_affiliate_tracking"
+      ],
+      "evidence_ids": [
+        "evidence.affiliate_ml_owner_interview",
+        "evidence.affiliate_ml_live_traffic"
+      ],
+      "last_used": null
+    },
+    {
+      "id": "skill.ml_model_retraining",
+      "name": "Periodic ML model retraining and live-traffic evaluation (experimental scope)",
+      "category": "ml",
+      "claim_status": "owner_verified",
+      "project_ids": [
+        "project.personal_affiliate_tracking"
+      ],
+      "evidence_ids": [
+        "evidence.affiliate_ml_live_traffic"
+      ],
+      "last_used": null
+    }
+  ],
+  "technologies": [
+    {
+      "id": "tech.dotnet",
+      "name": "C# / .NET",
+      "project_ids": [
+        "project.cpa_express",
+        "project.ai_dev_runner",
+        "project.dexflow",
+        "project.dexflow_client_solutions",
+        "project.debt_management",
+        "project.frozen_meals",
+        "project.social_network",
+        "project.lending_platform"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.postgresql",
+      "name": "PostgreSQL",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.kafka",
+      "name": "Kafka / Redpanda",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.redis",
+      "name": "Redis",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.rocksdb",
+      "name": "RocksDB",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.starrocks",
+      "name": "StarRocks",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.nextjs",
+      "name": "Next.js",
+      "project_ids": [
+        "project.cpa_express",
+        "project.debt_management"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.docker",
+      "name": "Docker",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.azure_devops",
+      "name": "Azure DevOps Git",
+      "project_ids": [
+        "project.ai_dev_runner"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.cpp",
+      "name": "C++",
+      "project_ids": [
+        "project.visiflow"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.sal",
+      "name": "SAL",
+      "project_ids": [
+        "project.visiflow"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.java",
+      "name": "Java",
+      "project_ids": [
+        "project.visiflow"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.jsp",
+      "name": "JSP",
+      "project_ids": [
+        "project.visiflow"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.mssql",
+      "name": "Microsoft SQL Server",
+      "project_ids": [
+        "project.dexflow",
+        "project.dexflow_client_solutions"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.office_automation",
+      "name": "Microsoft Office Automation",
+      "project_ids": [
+        "project.dexflow"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.aspnet_core",
+      "name": "ASP.NET Core",
+      "project_ids": [
+        "project.debt_management",
+        "project.social_network"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.rest",
+      "name": "REST APIs",
+      "project_ids": [
+        "project.debt_management"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.react",
+      "name": "React",
+      "project_ids": [
+        "project.debt_management"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.devextreme",
+      "name": "DevExtreme",
+      "project_ids": [
+        "project.debt_management"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.nopcommerce",
+      "name": "nopCommerce",
+      "project_ids": [
+        "project.frozen_meals"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.cin7",
+      "name": "Cin7",
+      "project_ids": [
+        "project.frozen_meals"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.graphql",
+      "name": "GraphQL",
+      "project_ids": [
+        "project.social_network"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.jquery",
+      "name": "jQuery",
+      "project_ids": [
+        "project.social_network"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.orchard_core",
+      "name": "Orchard Core",
+      "project_ids": [
+        "project.social_network"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.ceph",
+      "name": "Ceph",
+      "project_ids": [
+        "project.social_network"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.matrix",
+      "name": "Matrix",
+      "project_ids": [
+        "project.social_network"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.aspnet",
+      "name": "ASP.NET",
+      "project_ids": [
+        "project.lending_platform"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.razor",
+      "name": "Razor",
+      "project_ids": [
+        "project.lending_platform"
+      ],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.devexpress",
+      "name": "DevExpress",
+      "project_ids": [
+        "project.lending_platform"
+      ],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.javascript",
+      "name": "JavaScript",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.typescript",
+      "name": "TypeScript",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.mysql",
+      "name": "MySQL",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.clickhouse",
+      "name": "ClickHouse",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.ssas",
+      "name": "SQL Server Analysis Services (SSAS)",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.torchsharp",
+      "name": "TorchSharp",
+      "project_ids": [
+        "project.personal_affiliate_tracking"
+      ],
+      "proficiency": "Hands-on experimental implementation; production proficiency and recency not established",
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.owner_ml_interview_2026_11_21",
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.mlnet",
+      "name": "ML.NET",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.oauth2",
+      "name": "OAuth 2.0",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported"
+    },
+    {
+      "id": "tech.git",
+      "name": "Git",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.subversion",
+      "name": "Subversion",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.cvs",
+      "name": "CVS",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.pytorch",
+      "name": "PyTorch",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.tensorflow",
+      "name": "TensorFlow",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.dotnet_framework",
+      "name": ".NET Framework",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.dotnet_core",
+      "name": ".NET Core",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.aspnet_web_api",
+      "name": "ASP.NET Web API",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.html",
+      "name": "HTML",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.css",
+      "name": "CSS",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.linux",
+      "name": "Linux",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.windows",
+      "name": "Windows",
+      "project_ids": [],
+      "proficiency": null,
+      "verification": "reported",
+      "source_ids": [
+        "source.linkedin_skills_pasted_2026_11_21"
+      ],
+      "evidence_strength": "profile_listed_only"
+    },
+    {
+      "id": "tech.k3s",
+      "name": "K3s",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.argocd",
+      "name": "Argo CD",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.headlamp",
+      "name": "Headlamp",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.rancher",
+      "name": "Rancher",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.gitops",
+      "name": "GitOps",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.azure_pipelines",
+      "name": "Azure DevOps CI/CD",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    },
+    {
+      "id": "tech.dockerhub",
+      "name": "Docker Hub",
+      "project_ids": [
+        "project.cpa_express"
+      ],
+      "proficiency": null,
+      "verification": "owner_verified",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "evidence_strength": "project_reported"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence.workflow_history",
+      "claim": "Owner reports direct experience implementing business-process workflows in VisiFLOW and DexFlow context.",
+      "project_id": "project.dexflow",
+      "source_ids": [
+        "source.user_2026_11_20"
+      ],
+      "evidence_type": "owner_statement",
+      "verification": "reported",
+      "notes": "Confirm whether VisiFLOW and DexFlow were designed, built, maintained, or customized; separate personal contribution from team achievements."
+    },
+    {
+      "id": "evidence.cpa_architecture",
+      "claim": "Owner reports architectural and implementation work on CPA.express, including tracking, Kafka transport and analytics.",
+      "project_id": "project.cpa_express",
+      "source_ids": [
+        "source.user_prior_conversations"
+      ],
+      "evidence_type": "owner_statement",
+      "verification": "reported",
+      "notes": "Confirm production status and individual ownership of each subsystem before public use."
+    },
+    {
+      "id": "evidence.ai_dev_runner",
+      "claim": "Owner reports designing and operating an AI-assisted development runner and implementation-series workflow.",
+      "project_id": "project.ai_dev_runner",
+      "source_ids": [
+        "source.user_prior_conversations",
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "evidence_type": "owner_statement",
+      "verification": "reported",
+      "notes": "Owner clarified most implementation was AI-generated/vibe-coded; hands-on programming experience in AI system components is minor. Do not extrapolate to programmatic LLM API, agent frameworks, evals or MCP experience."
+    },
+    {
+      "id": "evidence.exigen_work",
+      "claim": "Worked on VisiFLOW with C++ libraries, SAL desktop applications and Java/JSP web applications.",
+      "project_id": "project.visiflow",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "evidence_type": "uploaded_cv_claim",
+      "verification": "reported",
+      "notes": "CV declaration; extent of component ownership not independently inspected."
+    },
+    {
+      "id": "evidence.dexflow_framework",
+      "claim": "Designed and implemented a scriptable, scalable, modular DexFLOW backend automation framework and reusable document-processing modules.",
+      "project_id": "project.dexflow",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "evidence_type": "uploaded_cv_claim",
+      "verification": "reported",
+      "notes": "Explicit contribution described in user-provided résumé."
+    },
+    {
+      "id": "evidence.print_house_customer_delivery",
+      "claim": "Independently developed a printing-house workflow solution and handled customer presentations, workstation setup and training.",
+      "project_id": "project.print_house_workflow",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "evidence_type": "uploaded_cv_claim",
+      "verification": "reported",
+      "notes": "Explicit description in résumé; illustrates customer-facing capability."
+    },
+    {
+      "id": "evidence.debt_management",
+      "claim": "Led team of two developers on Polish e-court integrated debt-management system and implemented backend and React/Next.js frontend.",
+      "project_id": "project.debt_management",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "evidence_type": "uploaded_cv_claim",
+      "verification": "reported",
+      "notes": "No independently verified team or scale metrics."
+    },
+    {
+      "id": "evidence.frozen_meals",
+      "claim": "Customized nopCommerce and integrated with Cin7.",
+      "project_id": "project.frozen_meals",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "evidence_type": "uploaded_cv_claim",
+      "verification": "reported",
+      "notes": "Explicit résumé statement."
+    },
+    {
+      "id": "evidence.social_network",
+      "claim": "Independently developed niche social network using ASP.NET Core GraphQL, jQuery, Orchard Core, Ceph and Matrix.",
+      "project_id": "project.social_network",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "evidence_type": "uploaded_cv_claim",
+      "verification": "reported",
+      "notes": "Explicit résumé statement."
+    },
+    {
+      "id": "evidence.lending_platform",
+      "claim": "Built and launched a lending platform, later led small team; supported two clients across four European countries.",
+      "project_id": "project.lending_platform",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "evidence_type": "uploaded_cv_claim",
+      "verification": "reported",
+      "notes": "Reported project reach, not verified client data."
+    },
+    {
+      "id": "evidence.affiliate_ml_linkedin",
+      "claim": "Owner-published LinkedIn experience reports regression-based traffic forecasting and modified DQN reinforcement learning for funnel optimization on a self-made tracking platform.",
+      "project_id": "project.personal_affiliate_tracking",
+      "source_ids": [
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ],
+      "evidence_type": "owner_profile_project_description",
+      "verification": "reported",
+      "notes": "No code, benchmark, deployed model evaluation, or performance outcome has been independently reviewed."
+    },
+    {
+      "id": "evidence.affiliate_ml_owner_interview",
+      "claim": "Owner confirms hands-on TorchSharp reinforcement-learning experimentation (modified DQN in the LinkedIn account), found delayed rewards made the approach unsuitable for the particular task, and switched to a regular deep neural network without online learning.",
+      "project_id": "project.personal_affiliate_tracking",
+      "source_ids": [
+        "source.owner_ml_interview_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ],
+      "evidence_type": "owner_interview",
+      "verification": "owner_verified",
+      "notes": "Owner verification means direct self-report, not independent code review. No production-quality RL claim, live-traffic evaluation of the replacement network is separately reported in evidence.affiliate_ml_live_traffic; the RL evaluation setting and replacement framework remain unconfirmed. Does not establish direct Python PyTorch or TensorFlow project use."
+    },
+    {
+      "id": "evidence.affiliate_ml_live_traffic",
+      "project_id": "project.personal_affiliate_tracking",
+      "claim": "Owner reports implementing and using a conventional neural network on real paid affiliate traffic for routing via own landing pages vs direct to advertiser, with GEO/device features and periodic retraining on all available data. After more than 1,000 leads, direct routing was observed to be more profitable; owner concluded the network was unnecessary.",
+      "source_ids": [
+        "source.owner_ml_live_traffic_interview_2026_11_21"
+      ],
+      "evidence_type": "owner_interview",
+      "verification": "owner_verified",
+      "notes": "Direct owner report, not independent verification. Lead count is not visitor count. No exact financial figures, allocation methodology, baseline, holdout design, statistical significance, deployment framework for the replacement network, or retraining automation details supplied. The live-traffic confirmation applies to the replacement network, not necessarily DQN. Does not establish general production ML/MLOps proficiency."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source.user_2026_11_20",
+      "type": "conversation",
+      "description": "Owner-described Exigen VisiFLOW, DexFlow and interest in Temporal.",
+      "access": "private",
+      "review_status": "source_identified"
+    },
+    {
+      "id": "source.user_2026_11_21",
+      "type": "conversation",
+      "description": "Owner-described employment outline and passport concept.",
+      "access": "private",
+      "review_status": "source_identified"
+    },
+    {
+      "id": "source.user_prior_conversations",
+      "type": "conversation_summary",
+      "description": "Earlier owner discussions about work, CPA.express, ITIS, SIA ITligence and AI Dev Runner; must be reconciled against primary records.",
+      "access": "private",
+      "review_status": "partial_secondary_source"
+    },
+    {
+      "id": "source.resume_uploaded_2026_11_21",
+      "type": "uploaded_cv",
+      "description": "Resume - Valentins Vladiko.docx, provided 2026-11-21; job history, projects, education, technology list, contact details, courses, and languages. Original creation/last-update date unknown.",
+      "access": "private",
+      "review_status": "extracted_pending_owner_confirmation"
+    },
+    {
+      "id": "source.linkedin_public_2026_11_21",
+      "type": "public_indexed_profile",
+      "description": "Publicly indexed LinkedIn profile at https://www.linkedin.com/in/valentinvladiko/; index provides ITIS association, University of Latvia education years, public About excerpt, languages; direct page access blocked and job details incomplete.",
+      "access": "public",
+      "review_status": "limited_public_index_only"
+    },
+    {
+      "id": "source.linkedin_pdf_uploaded_2026_11_21",
+      "type": "uploaded_linkedin_profile_pdf",
+      "description": "Profile (1).pdf, two-page PDF of owner LinkedIn profile. Contains About, ITIS/Exigen/Self-employed history, languages, education. Evidence from owner-uploaded export, not authenticated independently.",
+      "access": "private",
+      "review_status": "extracted_pending_owner_confirmation"
+    },
+    {
+      "id": "source.linkedin_skills_pasted_2026_11_21",
+      "type": "owner_pasted_linkedin_skills",
+      "description": "Owner-pasted list of LinkedIn skills and LinkedIn-associated role labels, 2026-11-21. Association is LinkedIn profile metadata, not proof of project usage.",
+      "access": "private",
+      "review_status": "captured_verbatim_labels"
+    },
+    {
+      "id": "source.linkedin_courses_pasted_2026_11_21",
+      "type": "owner_pasted_linkedin_courses",
+      "description": "Owner-pasted five Udemy course titles and associated roles from LinkedIn, 2026-11-21. Completion status unknown.",
+      "access": "private",
+      "review_status": "captured_verbatim_titles"
+    },
+    {
+      "id": "source.owner_ml_interview_2026_11_21",
+      "type": "conversation",
+      "description": "Owner clarification in the career passport interview on 2026-11-21: used TorchSharp for experimental reinforcement learning; delayed rewards made RL unsuitable for the task as implemented; switched to a regular deep network without online learning.",
+      "access": "private",
+      "review_status": "owner_direct_statement"
+    },
+    {
+      "id": "source.owner_ml_live_traffic_interview_2026_11_21",
+      "type": "conversation",
+      "description": "Owner interview: conventional neural network used primarily GEO and device attributes to decide between own landing pages and direct-to-advertiser traffic routing; deployed on real paid traffic, periodically retrained on all available data. After more than 1,000 leads, direct routing was observed to be more profitable, leading owner to conclude the network was unnecessary for this task.",
+      "access": "private",
+      "review_status": "owner_direct_statement"
+    },
+    {
+      "id": "source.owner_six_round_interview_2026_11_21",
+      "type": "conversation",
+      "description": "Six-round owner-reviewed competency, AI engineering, work style, motivation, compensation, and six-month career strategy interview, 2026-11-21. Rankings are self-assessment baselines, not externally verified outcomes.",
+      "access": "private",
+      "review_status": "owner_accepted_with_corrections"
+    }
+  ],
+  "values_and_constraints": {
+    "work_preferences": [
+      {
+        "id": "preference.remote",
+        "name": "Remote work",
+        "priority": "preferred",
+        "source_ids": [
+          "source.user_2026_11_21"
+        ]
+      },
+      {
+        "id": "preference.flexible_hours",
+        "name": "Flexible working hours",
+        "priority": "preferred",
+        "source_ids": [
+          "source.user_2026_11_21"
+        ]
+      },
+      {
+        "id": "preference.async_work",
+        "name": "Asynchronous collaboration and clear deliverables",
+        "priority": "proposed",
+        "source_ids": [
+          "source.user_prior_conversations"
+        ]
+      }
+    ],
+    "availability_hours_per_week": {
+      "preferred_min": 8,
+      "preferred_max": 16,
+      "exceptional_max": 20,
+      "verification": "owner_confirmed"
+    },
+    "short_term_extra_income_target_eur_per_month": {
+      "minimum_target_band_eur": [
+        300,
+        400
+      ],
+      "ceiling_eur": null,
+      "maximize_above_minimum": true,
+      "verification": "owner_confirmed"
+    },
+    "disallowed_work": [],
+    "visibility": "private",
+    "employment_compensation": {
+      "full_time_monthly_threshold_eur": 6000,
+      "currency": "EUR",
+      "employment_basis": "gross monthly salary",
+      "contract_types": [
+        "employment",
+        "B2B"
+      ],
+      "b2b_interpretation": "B2B threshold requires contract-economics review and must not be treated as equivalent to gross employment salary",
+      "verification": "owner_confirmed"
+    },
+    "freelance_rate_guidance": {
+      "proposed_after_platform_fee_eur_per_hour": {
+        "learning_project": 25,
+        "standard": 40,
+        "specialized": 60
+      },
+      "status": "assistant_suggested_unconfirmed",
+      "hard_filter": false,
+      "notes": "Not explicitly confirmed by owner; use for scenarios only, not hard filtering."
+    },
+    "engagement_preferences": {
+      "remote_work": "strongly_preferred",
+      "flexible_hours": "strongly_preferred",
+      "communication": "asynchronous_preferred",
+      "meetings": "occasional_scheduled",
+      "on_call": "avoid",
+      "urgent_support": "avoid",
+      "duration_preference": "a_few_days_to_6_weeks",
+      "recurring_work": "acceptable_if_predictable",
+      "contract_types": [
+        "fixed_price",
+        "hourly"
+      ],
+      "travel": "avoid",
+      "fixed_delivery_scope": "strongly_preferred",
+      "ai_tools_permitted": "strongly_preferred",
+      "notes": "Owner accepted interview baseline; these are preferences rather than categorical bans unless explicitly specified."
+    },
+    "full_time_preferences": {
+      "remote": "strongly_preferred",
+      "hybrid_riga": "negotiable",
+      "relocation": "not_desired",
+      "individual_contributor": "preferred",
+      "direct_people_management": "not_preferred",
+      "startup_or_established_company": "both_acceptable",
+      "ai_native_engineering": "strongly_preferred"
+    },
+    "opportunity_cost_priorities": {
+      "protect_cpa_express": "very_high",
+      "protect_family_time": "very_high",
+      "predictable_workload": "high",
+      "reduce_context_switching": "high",
+      "avoid_long_term_obligations": "high",
+      "maintain_current_employment": "essential",
+      "reusable_learning": "high",
+      "reputation": "moderate"
+    },
+    "work_preference_review_status": "owner_accepted_baseline_with_specific_financial_and_time_corrections"
+  },
+  "working_style": {
+    "visibility": "private",
+    "strengths": [
+      {
+        "id": "trait.analytical_thinking",
+        "name": "Analytical thinking",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.systems_thinking",
+        "name": "Systems thinking",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.architectural_reasoning",
+        "name": "Architectural reasoning",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.independent_learning",
+        "name": "Independent learning",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.autonomy",
+        "name": "Autonomy",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.ownership",
+        "name": "Ownership",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.critical_thinking",
+        "name": "Critical thinking",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.persistence",
+        "name": "Persistence",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.quality_orientation",
+        "name": "Attention to quality",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.cross_domain_thinking",
+        "name": "Cross-domain thinking",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.self_reflection",
+        "name": "Self-reflection",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "trait.founder_mindset",
+        "name": "Founder mindset",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      }
+    ],
+    "frictions": [
+      {
+        "id": "friction.overengineering",
+        "name": "Overengineering",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "friction.perfectionism",
+        "name": "Perfectionism",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "friction.communication_avoidance",
+        "name": "Avoidance of proactive communication",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "note": "Self-described friction to explore; uploaded CV also describes direct customer requirements work, company-wide presentations, deployment and employee training. Do not equate low preference for outreach with inability to communicate.",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "friction.technical_comfort_zone_bias",
+        "name": "Technical comfort-zone bias",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "friction.prioritization",
+        "name": "Difficulty with ruthless prioritization",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "friction.scope_expansion",
+        "name": "Scope expansion",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "friction.opportunity_fragmentation",
+        "name": "Opportunity fragmentation",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "friction.over_preparation",
+        "name": "Excessive analytical preparation",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      },
+      {
+        "id": "friction.self_marketing",
+        "name": "Limited self-marketing",
+        "basis": "owner_accepted_assistant_assessment",
+        "verification": "self_assessment_baseline",
+        "source_ids": [
+          "source.owner_six_round_interview_2026_11_21"
+        ]
+      }
+    ],
+    "favorable_conditions": [
+      "High autonomy",
+      "Intellectual challenges",
+      "Clear objectives",
+      "Architectural ownership",
+      "Small competent teams",
+      "Uninterrupted deep work",
+      "Asynchronous collaboration",
+      "Decision-making authority"
+    ],
+    "unfavorable_conditions": [
+      "Micromanagement",
+      "Frequent interruptions",
+      "Excessive meetings",
+      "Repetitive implementation",
+      "Organizational politics",
+      "Sales-heavy responsibilities",
+      "Responsibility without authority",
+      "Rigid working schedules"
+    ],
+    "interpretation": "Owner-accepted working-style hypotheses, not psychological diagnosis or suitability constraints. Do not expose publicly."
+  },
+  "learning_horizon": [
+    {
+      "id": "learning.temporal",
+      "name": "Temporal / durable execution",
+      "category": "technology",
+      "status": "six_month_priority",
+      "reason": "Six-month top learning priority; personal workflows and paid project readiness",
+      "evidence_of_mastery": null
+    },
+    {
+      "id": "learning.llm_evals",
+      "name": "LLM evaluation and reliability",
+      "category": "skill",
+      "status": "six_month_priority",
+      "reason": "Learn to assess agent/job-match reliability",
+      "evidence_of_mastery": null
+    },
+    {
+      "id": "learning.mcp",
+      "name": "MCP and tool integrations",
+      "category": "technology",
+      "status": "secondary_or_supporting",
+      "reason": "Learn as part of programmatic LLM integration, not a standalone framework exercise",
+      "evidence_of_mastery": null
+    },
+    {
+      "id": "learning.llm_integrations",
+      "name": "Programmatic LLM integration",
+      "category": "skill",
+      "evidence_of_mastery": null,
+      "status": "six_month_priority",
+      "reason": "No current hands-on API experience; build structured-output assessment in Job Radar"
+    },
+    {
+      "id": "learning.cloud_platform",
+      "name": "One cloud platform as needed",
+      "category": "skill",
+      "evidence_of_mastery": null,
+      "status": "secondary_or_supporting",
+      "reason": "Secondary priority; existing self-hosted K3s/GitOps experience"
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "question.employment",
+      "topic": "employment",
+      "question": "Confirm whether ITIS role remains current, which public title to use (LinkedIn: Lead Software Engineer for 2006–Present; CV splits Software Engineer then Senior Software Engineer), and how to describe the self-employed affiliate-marketing engagement.",
+      "priority": "medium"
+    },
+    {
+      "id": "question.portfolio_permission",
+      "topic": "privacy",
+      "question": "Which projects and code-derived facts may be publicly disclosed under employer/client agreements?",
+      "priority": "high"
+    },
+    {
+      "id": "question.english_wording",
+      "topic": "languages",
+      "question": "English is \"fluent\" in CV and \"professional working proficiency\" in public LinkedIn; what owner-approved wording should we use?",
+      "priority": "low"
+    },
+    {
+      "id": "question.cv_freshness",
+      "topic": "source_quality",
+      "question": "When was this CV last updated, especially its \"Present\" role and listed projects?",
+      "priority": "low"
+    },
+    {
+      "id": "question.role_end_date",
+      "topic": "history",
+      "question": "Was self-employed affiliate marketing paused/ended in December 2024, or was the LinkedIn role simply closed while related work continued?",
+      "priority": "low"
+    },
+    {
+      "id": "question.b2b_minimum",
+      "topic": "commercial",
+      "question": "If needed for a real full-time B2B proposal, determine whether €6,000 is a minimum invoiced amount or an employment-equivalent net target; do not assume gross salary and B2B invoice amounts are comparable.",
+      "priority": "low"
+    }
+  ],
+  "spoken_languages": [
+    {
+      "id": "language.russian",
+      "name": "Russian",
+      "cv_claim": "native",
+      "linkedin_public_claim": "native or bilingual proficiency",
+      "verification": "reported",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_public_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ]
+    },
+    {
+      "id": "language.latvian",
+      "name": "Latvian",
+      "cv_claim": "bilingual",
+      "linkedin_public_claim": "native or bilingual proficiency",
+      "verification": "reported",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_public_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ]
+    },
+    {
+      "id": "language.english",
+      "name": "English",
+      "cv_claim": "fluent",
+      "linkedin_public_claim": "professional working proficiency",
+      "verification": "reported",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_public_2026_11_21",
+        "source.linkedin_pdf_uploaded_2026_11_21"
+      ],
+      "notes": "Different source terminology; choose owner-approved public wording."
+    }
+  ],
+  "professional_development": [
+    {
+      "id": "training.udemy_agile",
+      "name": "The Ultimate Agile Scrum Master Certification Training",
+      "provider": "Udemy",
+      "type": "course_taken",
+      "completion_date": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported"
+    },
+    {
+      "id": "training.udemy_statistics",
+      "name": "Statistics for Business Analytics and Data Science A-Z",
+      "provider": "Udemy",
+      "type": "course_taken",
+      "completion_date": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported"
+    },
+    {
+      "id": "training.udemy_datascience",
+      "name": "Complete Data Science & Machine Learning",
+      "provider": "Udemy",
+      "type": "course_taken",
+      "completion_date": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported"
+    },
+    {
+      "id": "training.udemy_rl_advanced",
+      "name": "Advanced AI: Deep Reinforcement Learning in Python",
+      "provider": "Udemy",
+      "type": "course_taken",
+      "completion_date": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_courses_pasted_2026_11_21"
+      ],
+      "verification": "reported"
+    },
+    {
+      "id": "training.udemy_rl_cutting_edge",
+      "name": "Cutting-Edge AI: Deep Reinforcement Learning in Python",
+      "provider": "Udemy",
+      "type": "course_taken",
+      "completion_date": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21",
+        "source.linkedin_courses_pasted_2026_11_21"
+      ],
+      "verification": "reported"
+    },
+    {
+      "id": "training.udemy_rl_complete",
+      "name": "Complete Guide to Reinforcement Learning",
+      "provider": "Udemy",
+      "type": "course_taken",
+      "completion_date": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported"
+    },
+    {
+      "id": "training.udemy_rl_artificial_intelligence",
+      "name": "Artificial Intelligence: Reinforcement Learning in Python",
+      "provider": "Udemy",
+      "type": "listed_on_linkedin",
+      "completion_date": null,
+      "source_ids": [
+        "source.linkedin_courses_pasted_2026_11_21"
+      ],
+      "verification": "reported"
+    },
+    {
+      "id": "training.udemy_react_complete",
+      "name": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+      "provider": "Udemy",
+      "type": "listed_on_linkedin",
+      "completion_date": null,
+      "source_ids": [
+        "source.linkedin_courses_pasted_2026_11_21"
+      ],
+      "verification": "reported"
+    },
+    {
+      "id": "training.udemy_tensorflow_2",
+      "name": "Tensorflow 2.0: Deep Learning and Artificial Intelligence",
+      "provider": "Udemy",
+      "type": "listed_on_linkedin",
+      "completion_date": null,
+      "source_ids": [
+        "source.linkedin_courses_pasted_2026_11_21"
+      ],
+      "verification": "reported"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "achievement.debt_management_manual",
+      "project_id": "project.debt_management",
+      "description": "CV claims significant reduction of manual work relative to a leading established competitor.",
+      "metric": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private",
+      "caution": "No measurement or comparator benchmark supplied."
+    },
+    {
+      "id": "achievement.lending_platform_geography",
+      "project_id": "project.lending_platform",
+      "description": "Built and launched loan-lifecycle platform later serving two clients across four European countries.",
+      "metric": "two clients; four European countries (CV claim)",
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private"
+    },
+    {
+      "id": "achievement.dexflow_automation",
+      "project_id": "project.dexflow",
+      "description": "Personally designed scriptable modular automation framework and multiple reusable document-processing modules.",
+      "metric": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private"
+    },
+    {
+      "id": "achievement.print_house_deployment",
+      "project_id": "project.print_house_workflow",
+      "description": "Independently delivered workflow solution including customer interaction, deployment, presentations and staff training.",
+      "metric": null,
+      "source_ids": [
+        "source.resume_uploaded_2026_11_21"
+      ],
+      "verification": "reported",
+      "visibility": "private"
+    },
+    {
+      "id": "achievement.affiliate_ml_model_selection",
+      "project_id": "project.personal_affiliate_tracking",
+      "description": "Identified delayed rewards as a practical limitation of an experimental RL approach to affiliate funnel optimization and switched to a conventional deep network without online learning.",
+      "metric": null,
+      "source_ids": [
+        "source.owner_ml_interview_2026_11_21"
+      ],
+      "verification": "owner_verified",
+      "visibility": "private",
+      "caution": "Qualitative engineering outcome only; no performance, production deployment, or commercial impact claim. Not a general conclusion about RL in affiliate marketing."
+    },
+    {
+      "id": "achievement.affiliate_ml_simplification",
+      "project_id": "project.personal_affiliate_tracking",
+      "description": "Used a periodically retrained neural network to select landing-page versus direct-to-advertiser routes on paid affiliate traffic. Observed that direct routing was more profitable and concluded the neural network was unnecessary for the particular task.",
+      "metric": "More than 1,000 leads (owner-reported); no quantified uplift or profit figures supplied.",
+      "source_ids": [
+        "source.owner_ml_live_traffic_interview_2026_11_21"
+      ],
+      "verification": "owner_verified",
+      "visibility": "private",
+      "caution": "No controlled comparison, statistical significance, independent verification, or confirmed removal of model supplied. Not a general claim about direct routing or neural-network effectiveness."
+    }
+  ],
+  "linkedin_skill_inventory": [
+    {
+      "label": "PyTorch",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "tech.pytorch",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "StarRocks",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "tech.starrocks",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "ASP.NET Web API",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.aspnet_web_api",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Next.js",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.nextjs",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "C#",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.dotnet",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": ".NET Framework",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.dotnet_framework",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": ".NET Core",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.dotnet_core",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "ASP.NET Core",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.aspnet_core",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "JavaScript",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.javascript",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Cascading Style Sheets (CSS)",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.css",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "React.js",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.react",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "DevExpress",
+      "linked_in_association": "Lead Software Engineer at ITIS",
+      "canonical_ref": "tech.devexpress",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "REST APIs",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.rest",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "RESTful WebServices",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.rest",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "C++",
+      "linked_in_association": "Programmer at Exigen Group",
+      "canonical_ref": "tech.cpp",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Windows",
+      "linked_in_association": "3 experiences at ITIS and 2 other companies",
+      "canonical_ref": "tech.windows",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Linux",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.linux",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Microsoft SQL Server",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.mssql",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "MySQL",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.mysql",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "PostgreSQL",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.postgresql",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "HTML",
+      "linked_in_association": "3 experiences at ITIS and 2 other companies",
+      "canonical_ref": "tech.html",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "TensorFlow",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "tech.tensorflow",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "ASP.NET",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.aspnet",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Reinforcement Learning",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "skill.reinforcement_learning",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "jQuery",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.jquery",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "ClickHouse",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "tech.clickhouse",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "SQL Server Analysis Services (SSAS)",
+      "linked_in_association": "Lead Software Engineer at ITIS",
+      "canonical_ref": "tech.ssas",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Subversion",
+      "linked_in_association": "Lead Software Engineer at ITIS",
+      "canonical_ref": "tech.subversion",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Git",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "tech.git",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "CVS",
+      "linked_in_association": "Programmer at Exigen Group",
+      "canonical_ref": "tech.cvs",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Affiliate Marketing",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "skill.affiliate_marketing",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Deep Learning",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "skill.deep_learning",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Machine Learning",
+      "linked_in_association": "Affiliate Marketer at Self-employed",
+      "canonical_ref": "skill.machine_learning",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Workflow Management",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "skill.workflow_engineering",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Document Management",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "skill.document_management",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Image Processing",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "skill.image_processing",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "MS Office Automation",
+      "linked_in_association": "2 experiences at ITIS and 1 other company",
+      "canonical_ref": "tech.office_automation",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    },
+    {
+      "label": "Management of small teams",
+      "linked_in_association": "Lead Software Engineer at ITIS",
+      "canonical_ref": "skill.small_team_leadership",
+      "source_id": "source.linkedin_skills_pasted_2026_11_21",
+      "status": "profile_listing"
+    }
+  ],
+  "linkedin_course_inventory": [
+    {
+      "label": "Advanced AI: Deep Reinforcement Learning in Python",
+      "canonical_ref": "training.udemy_rl_advanced",
+      "associated_with": "Affiliate Marketer at Self-employed",
+      "source_id": "source.linkedin_courses_pasted_2026_11_21",
+      "completion_status": "unknown"
+    },
+    {
+      "label": "Artificial Intelligence: Reinforcement Learning in Python",
+      "canonical_ref": "training.udemy_rl_artificial_intelligence",
+      "associated_with": "Affiliate Marketer at Self-employed",
+      "source_id": "source.linkedin_courses_pasted_2026_11_21",
+      "completion_status": "unknown"
+    },
+    {
+      "label": "Cutting-Edge AI: Deep Reinforcement Learning in Python",
+      "canonical_ref": "training.udemy_rl_cutting_edge",
+      "associated_with": "Affiliate Marketer at Self-employed",
+      "source_id": "source.linkedin_courses_pasted_2026_11_21",
+      "completion_status": "unknown"
+    },
+    {
+      "label": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+      "canonical_ref": "training.udemy_react_complete",
+      "associated_with": "Lead Software Engineer at ITIS",
+      "source_id": "source.linkedin_courses_pasted_2026_11_21",
+      "completion_status": "unknown"
+    },
+    {
+      "label": "Tensorflow 2.0: Deep Learning and Artificial Intelligence",
+      "canonical_ref": "training.udemy_tensorflow_2",
+      "associated_with": "Affiliate Marketer at Self-employed",
+      "source_id": "source.linkedin_courses_pasted_2026_11_21",
+      "completion_status": "unknown"
+    }
+  ],
+  "capability_assessments": [
+    {
+      "id": "capability.software_and_systems_architecture",
+      "group": "engineering",
+      "name": "Software and systems architecture",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.c_net_backend_engineering",
+      "group": "engineering",
+      "name": "C# / .NET backend engineering",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.relational_data_modeling",
+      "group": "engineering",
+      "name": "Relational data modeling",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.sql_and_database_development",
+      "group": "engineering",
+      "name": "SQL and database development",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.business_workflow_engines",
+      "group": "engineering",
+      "name": "Business workflow engines",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.enterprise_application_development",
+      "group": "engineering",
+      "name": "Enterprise application development",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.api_design_and_implementation",
+      "group": "engineering",
+      "name": "API design and implementation",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.third_party_system_integration",
+      "group": "engineering",
+      "name": "Third-party system integration",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.legacy_system_modernization",
+      "group": "engineering",
+      "name": "Legacy system modernization",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.distributed_systems",
+      "group": "engineering",
+      "name": "Distributed systems",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.event_driven_architecture",
+      "group": "engineering",
+      "name": "Event-driven architecture",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.automated_testing_and_quality_engineering",
+      "group": "engineering",
+      "name": "Automated testing and quality engineering",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.full_stack_application_development",
+      "group": "engineering",
+      "name": "Full-stack application development",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.technical_leadership_of_small_teams",
+      "group": "engineering",
+      "name": "Technical leadership of small teams",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.high_performance_data_processing",
+      "group": "engineering",
+      "name": "High-performance data processing",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.infrastructure_and_deployment",
+      "group": "engineering",
+      "name": "Infrastructure and deployment",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.analytical_systems_and_reporting",
+      "group": "engineering",
+      "name": "Analytical systems and reporting",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.performance_optimization",
+      "group": "engineering",
+      "name": "Performance optimization",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.application_security",
+      "group": "engineering",
+      "name": "Application security",
+      "level": 2,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.machine_learning_engineering",
+      "group": "engineering",
+      "name": "Machine learning engineering",
+      "level": 2,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.business_process_automation",
+      "group": "domain",
+      "name": "Business process automation",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.document_management_and_processing",
+      "group": "domain",
+      "name": "Document management and processing",
+      "level": 4,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.lending_and_loan_lifecycle_management",
+      "group": "domain",
+      "name": "Lending and loan lifecycle management",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.debt_management_and_legal_process_automation",
+      "group": "domain",
+      "name": "Debt management and legal process automation",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.affiliate_marketing_and_traffic_tracking",
+      "group": "domain",
+      "name": "Affiliate marketing and traffic tracking",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.advertising_technology_and_traffic_analytics",
+      "group": "domain",
+      "name": "Advertising technology and traffic analytics",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.saas_product_development",
+      "group": "domain",
+      "name": "SaaS product development",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.financial_data_processing",
+      "group": "domain",
+      "name": "Financial data processing",
+      "level": 3,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.e_commerce",
+      "group": "domain",
+      "name": "E-commerce",
+      "level": 2,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.insurance_systems",
+      "group": "domain",
+      "name": "Insurance systems",
+      "level": 2,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.applied_ml_for_marketing_optimization",
+      "group": "domain",
+      "name": "Applied ML for marketing optimization",
+      "level": 2,
+      "assessment_type": "owner_accepted_baseline",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "id": "capability.ai_assisted_software_development",
+      "group": "ai_engineering",
+      "name": "AI-assisted software development",
+      "level": 3,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.specification_driven_development",
+      "group": "ai_engineering",
+      "name": "Specification-driven development",
+      "level": 3,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.decomposition_of_complex_tasks_for_ai",
+      "group": "ai_engineering",
+      "name": "Decomposition of complex tasks for AI",
+      "level": 3,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.ai_generated_code_review",
+      "group": "ai_engineering",
+      "name": "AI-generated code review",
+      "level": 3,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.architectural_supervision_of_ai_execution",
+      "group": "ai_engineering",
+      "name": "Architectural supervision of AI execution",
+      "level": 3,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.ai_development_workflow_design",
+      "group": "ai_engineering",
+      "name": "AI development workflow design",
+      "level": 3,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.structured_prompting_and_context_engineering",
+      "group": "ai_engineering",
+      "name": "Structured prompting and context engineering",
+      "level": 2,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.ai_assisted_research_and_analysis",
+      "group": "ai_engineering",
+      "name": "AI-assisted research and analysis",
+      "level": 2,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.custom_ai_development_automation",
+      "group": "ai_engineering",
+      "name": "Custom AI development automation",
+      "level": 2,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.agent_execution_and_handoff_management",
+      "group": "ai_engineering",
+      "name": "Agent execution and handoff management",
+      "level": 2,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.human_in_the_loop_ai_workflows",
+      "group": "ai_engineering",
+      "name": "Human-in-the-loop AI workflows",
+      "level": 2,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    },
+    {
+      "id": "capability.applied_conventional_ml_current_delivery_readiness",
+      "group": "ai_engineering",
+      "name": "Applied conventional ML (current delivery readiness)",
+      "level": 1,
+      "assessment_type": "owner_corrected_2026_11_21",
+      "visibility": "private",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "AI Dev Runner code was predominantly AI-generated; user reports limited hands-on AI system implementation. Do not infer LLM API proficiency."
+    }
+  ],
+  "technology_readiness": [
+    {
+      "technology": "C# / modern .NET / .NET Framework",
+      "level": 4,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "ASP.NET Core / REST APIs",
+      "level": 4,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Microsoft SQL Server",
+      "level": 4,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "PostgreSQL",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Git / Subversion / Azure DevOps",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "JavaScript / TypeScript",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "React / Next.js",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Docker / Docker Compose",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Kafka / Redpanda",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Redis / RocksDB",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "StarRocks",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "DevExpress / DevExtreme",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Linux server administration",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Azure DevOps CI/CD",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "GitOps",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Docker Hub",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Self-hosted infrastructure",
+      "level": 3,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "MySQL",
+      "level": 2,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "ClickHouse / SSAS",
+      "level": 2,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "GraphQL",
+      "level": 2,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "TorchSharp",
+      "level": 2,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "PyTorch / TensorFlow",
+      "level": 1,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "C++ (historical)",
+      "level": 2,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Java (historical)",
+      "level": 1,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Headlamp",
+      "level": 2,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Rancher (historical)",
+      "level": 2,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ]
+    },
+    {
+      "technology": "Kubernetes / K3s",
+      "level": null,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "level_range": [
+        2,
+        3
+      ],
+      "notes": "Practical K3s use in CPA.express; current readiness provisionally 2–3."
+    },
+    {
+      "technology": "Argo CD",
+      "level": null,
+      "status": "practical",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "level_range": [
+        2,
+        3
+      ],
+      "notes": "Practical CPA.express GitOps exposure; current readiness provisionally 2–3."
+    },
+    {
+      "technology": "Python",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "AWS",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "Microsoft Azure cloud services",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "Google Cloud Platform",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "Programmatic LLM API integration",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "LLM structured outputs / tool calling",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "Multi-agent systems",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "LLM evaluations",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "LLM observability and tracing",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "RAG and vector search",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "MCP tool integration",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    },
+    {
+      "technology": "Temporal",
+      "level": null,
+      "status": "no_practical_experience",
+      "assessment_type": "owner_accepted_baseline",
+      "source_ids": [
+        "source.owner_six_round_interview_2026_11_21"
+      ],
+      "notes": "Potential growth skill, not eligible as a proven competency."
+    }
+  ],
+  "interests": {
+    "work_types": [
+      {
+        "name": "Systems architecture and design",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Designing new systems from scratch",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Solving complex technical problems",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "AI agents and intelligent automation",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Engineering workflow automation",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Product engineering",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Research and technical experimentation",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Backend development",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Distributed systems engineering",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Data engineering and analytics",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Performance optimization",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Complex third-party integrations",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Legacy system modernization",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Infrastructure and DevOps",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Applied machine learning",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Technical leadership of small teams",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Technical consulting",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Full-stack development",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Frontend application development",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Automated testing",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Technical documentation",
+        "level": 1,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Code review",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Bug fixing and maintenance",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Routine CRUD development",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "UI/UX design",
+        "level": 1,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Large-team management",
+        "level": 1,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Sales and business development",
+        "level": 1,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      }
+    ],
+    "domains": [
+      {
+        "name": "AI-powered products and automation",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "SaaS products and platforms",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Marketing technology / AdTech",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Developer tools and productivity",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Workflow and process automation",
+        "level": 4,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Data-intensive applications",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Financial technology",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Business process optimization",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Enterprise software",
+        "level": 3,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "E-commerce",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Document management",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Consumer-facing applications",
+        "level": 2,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      },
+      {
+        "name": "Traditional corporate IT",
+        "level": 1,
+        "basis": "owner_accepted_baseline_2026_11_21"
+      }
+    ],
+    "interpretation": "Interest levels measure motivation, not capability. Level 1 means prefer to avoid, not a prohibition.",
+    "visibility": "private",
+    "source_ids": [
+      "source.owner_six_round_interview_2026_11_21"
+    ]
+  },
+  "motivators": [
+    {
+      "name": "Intellectual challenge",
+      "importance": "high"
+    },
+    {
+      "name": "Independence and autonomy",
+      "importance": "very_high"
+    },
+    {
+      "name": "Building something of my own",
+      "importance": "very_high"
+    },
+    {
+      "name": "Long-term financial independence",
+      "importance": "very_high"
+    },
+    {
+      "name": "Learning commercially valuable technologies",
+      "importance": "very_high"
+    },
+    {
+      "name": "Creating tangible business value",
+      "importance": "high"
+    },
+    {
+      "name": "Creative freedom",
+      "importance": "high"
+    },
+    {
+      "name": "Making technical and architectural decisions",
+      "importance": "high"
+    },
+    {
+      "name": "Immediate financial compensation",
+      "importance": "high"
+    },
+    {
+      "name": "Professional recognition",
+      "importance": "moderate"
+    },
+    {
+      "name": "Formal authority and management position",
+      "importance": "low"
+    },
+    {
+      "name": "Corporate career advancement",
+      "importance": "low"
+    }
+  ],
+  "learning_strategy": {
+    "horizon_months": 6,
+    "start_date": "2026-11-21",
+    "target_review_date": "2027-05-21",
+    "approved": "owner_accepted",
+    "principle": "Learn through useful projects and paid assignments; acquire adjacent capabilities with evidence; do not jeopardize CPA.express.",
+    "priorities": [
+      {
+        "rank": 1,
+        "id": "learning.temporal",
+        "name": "Temporal / durable .NET orchestration",
+        "demonstration": "Durable scheduled Job Radar workflow with retries and human review"
+      },
+      {
+        "rank": 2,
+        "id": "learning.llm_integrations",
+        "name": "Programmatic LLM integration, structured output, tool calls and MCP",
+        "demonstration": "Job assessment Activity with typed output, explicit failure handling and permitted Upwork integration"
+      },
+      {
+        "rank": 3,
+        "id": "learning.llm_evals",
+        "name": "LLM evaluation and reliability",
+        "demonstration": "Small labeled test set comparing recommendations with owner decisions; regression checks"
+      },
+      {
+        "rank": 4,
+        "id": "learning.cloud_platform",
+        "name": "Cloud/platform engineering (secondary)",
+        "demonstration": "Deepen K3s/Argo CD and learn one cloud provider only when project demand warrants it"
+      }
+    ],
+    "deferred_by_default": [
+      "Python for its own sake",
+      "New frontend framework for its own sake",
+      "Production deep-learning model research"
+    ],
+    "execution_guardrail": "Timebox learning and prioritize useful outputs; stop if it turns into a generic orchestration platform."
+  },
+  "export_policy": {
+    "default": "deny_unless_explicitly_selected",
+    "private_sections": [
+      "working_style",
+      "interests",
+      "motivators",
+      "values_and_constraints",
+      "learning_strategy",
+      "technology_readiness",
+      "capability_assessments",
+      "open_questions",
+      "sources",
+      "evidence"
+    ],
+    "resume_projection": "Use employment, education, projects, technologies and achievements as appropriate; include only source-supported, publicly disclosable claims, and review before sending.",
+    "job_matching_projection": "Include current competencies, interests, availability, constraints and learning priorities locally or to explicitly authorized processing services; keep personal contact data out of LLM prompts when unnecessary.",
+    "prohibited_inference": "Do not present ratings as standardized measures or claim completion of cloud, MCP, Temporal, evals, or production LLM API projects."
+  }
+}
