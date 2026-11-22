@@ -1,13 +1,21 @@
+# Environment configuration
 .env
 .env.*
 !.env.example
+
+# Docker secrets
+**/secrets/
+
+# Local database files and backups
+**/data/
 **/backups/
-/data/
-/career/passport.json
+*.dump
+
+# Build output
 **/bin/
 **/obj/
-*.pem
-*.key
 
-*.dump
-*.age
+# IDE
+.vs/
+.idea/
+.vscode/
