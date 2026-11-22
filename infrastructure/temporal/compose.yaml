@@ -42,6 +42,9 @@ services:
       BIND_ON_IP: 0.0.0.0
       NUM_HISTORY_SHARDS: "4"
       LOG_LEVEL: info
+      DYNAMIC_CONFIG_FILE_PATH: /etc/temporal/config/dynamicconfig/docker.yaml
+    volumes:
+      - ./dynamicconfig:/etc/temporal/config/dynamicconfig:ro
     ports:
       - "127.0.0.1:7233:7233"
     healthcheck:
