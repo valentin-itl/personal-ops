@@ -12,6 +12,9 @@ internal static class UpworkErrorMapper
 {
     public const string JobBrowseCooldownCode = "JOB_BROWSE_COOLDOWN";
 
+    /// <summary>Message prefix of the SDK's OAuth handshake failures (ClientOAuthProvider).</summary>
+    private const string OAuthFailurePrefix = "Failed to handle unauthorized response";
+
     /// <summary>Upwork does not send a delay with the job-browse cooldown; its docs say it lasts about a minute.</summary>
     public static readonly TimeSpan JobBrowseCooldown = TimeSpan.FromSeconds(60);
 
@@ -91,6 +94,23 @@ internal static class UpworkErrorMapper
         // Already typed, e.g. thrown by the auth callback and wrapped by the SDK.
         if (Find<UpworkMcpException>(exception) is { } typed)
             return typed;
+
+        // The SDK reports every OAuth handshake failure (client registration rejected, token exchange refused,
+        // no usable authorization server) as a plain McpException with this prefix and no inner exception.
+        // Retrying cannot fix it, so it must not fall through to "transient" below.
+        if (Find<McpException>(exception) is { } oauth and not McpProtocolException
+            && oauth.Message.StartsWith(OAuthFailurePrefix, StringComparison.Ordinal))
+        {
+            var code = oauth.Message.Contains("Dynamic client registration failed", StringComparison.Ordinal)
+                ? "CLIENT_REGISTRATION_REJECTED"
+                : "OAUTH_FAILED";
+            return new UpworkAuthRequiredException(
+                Describe(tool, action, code, oauth.Message, raw?.TraceId), raw, code, exception)
+            {
+                Tool = tool,
+                Action = action,
+            };
+        }
 
         var http = Find<HttpRequestException>(exception);
         if (http?.StatusCode is { } status)

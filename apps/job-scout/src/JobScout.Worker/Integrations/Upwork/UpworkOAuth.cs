@@ -55,9 +55,9 @@ internal static class UpworkOAuth
 }
 
 /// <summary>
-/// Keeps tokens and the registered client ID between runs, so you sign in once.
+/// Keeps one source's OAuth tokens between runs, so it signs in once.
 /// The file holds a refresh token for your Upwork account: on Windows it is encrypted for your
-/// user with DPAPI. Delete the file to sign out of this app.
+/// user with DPAPI. Delete the file to sign that source out.
 /// </summary>
 internal sealed class ProtectedFileTokenCache(string path) : ITokenCache
 {

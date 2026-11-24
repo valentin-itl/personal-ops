@@ -33,6 +33,9 @@ internal sealed class ScannerHarness : IAsyncDisposable
 
     public ListLogger<UpworkSourceScanner> Logs { get; } = new();
 
+    /// <summary>Source ids the scanner asked a client for.</summary>
+    public List<Guid> RequestedSources { get; } = [];
+
     public JobScoutScanOptions Options { get; } = new()
     {
         SearchProfiles =
@@ -60,7 +63,7 @@ internal sealed class ScannerHarness : IAsyncDisposable
     public async Task SeedSourceAsync(SourceHealth health = SourceHealth.Healthy)
     {
         await using var db = NewDb();
-        db.Sources.Add(new Source { Id = SourceId, Health = health });
+        db.Sources.Add(new Source { Id = SourceId, Name = "Upwork (test)", Health = health });
         await db.SaveChangesAsync(TestContext.Current.CancellationToken);
     }
 
@@ -70,7 +73,7 @@ internal sealed class ScannerHarness : IAsyncDisposable
     {
         await using var db = NewDb();
         var scanner = new UpworkSourceScanner(
-            db, _client.Value, new FixedOptionsMonitor<JobScoutScanOptions>(Options), Time, Logs);
+            db, new SingleClientProvider(_client.Value, RequestedSources), new FixedOptionsMonitor<JobScoutScanOptions>(Options), Time, Logs);
         return await scanner.ScanAsync(new SourceScanRequest(sourceId, profile), heartbeat: null, TestContext.Current.CancellationToken);
     }
 
@@ -115,6 +118,15 @@ internal sealed class ScannerHarness : IAsyncDisposable
     {
         if (_client.IsValueCreated)
             await _client.Value.DisposeAsync();
+    }
+}
+
+internal sealed class SingleClientProvider(IUpworkMcpClient client, List<Guid> requested) : IUpworkMcpClientProvider
+{
+    public IUpworkMcpClient GetClient(Guid sourceId)
+    {
+        requested.Add(sourceId);
+        return client;
     }
 }
 

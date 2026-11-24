@@ -1,5 +1,4 @@
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using ModelContextProtocol.Authentication;
 using ModelContextProtocol.Client;
 using ModelContextProtocol.Protocol;
@@ -20,13 +19,28 @@ public interface IUpworkMcpSessionFactory
     Task<IUpworkMcpSession> ConnectAsync(CancellationToken cancellationToken);
 }
 
-/// <summary>Connects to the Upwork MCP server over Streamable HTTP with OAuth (dynamic client registration).</summary>
-internal sealed class McpUpworkSessionFactory(IOptions<UpworkMcpOptions> options, ILoggerFactory loggerFactory)
-    : IUpworkMcpSessionFactory
+/// <summary>
+/// Connects one source to the Upwork MCP server over Streamable HTTP with OAuth: the source's public client
+/// (from <see cref="UpworkClientRegistrar"/>), authorization code with PKCE, tokens in the source's protected file.
+/// </summary>
+internal sealed class McpUpworkSessionFactory(
+    UpworkMcpOptions options,
+    IUpworkClientRegistrationStore registrations,
+    Guid sourceId,
+    ILoggerFactory loggerFactory)
+    : IUpworkMcpSessionFactory, IDisposable
 {
+    private readonly HttpClient _registrationHttp = new() { Timeout = options.ConnectTimeout };
+
+    public string TokenCachePath => Path.Combine(options.TokenCacheDirectory, $"upwork_tokens_{sourceId:N}.bin");
+
     public async Task<IUpworkMcpSession> ConnectAsync(CancellationToken cancellationToken)
     {
-        var o = options.Value;
+        var o = options;
+        var registrar = new UpworkClientRegistrar(
+            o, _registrationHttp, registrations, sourceId, loggerFactory.CreateLogger<McpUpworkSessionFactory>());
+        var clientId = await registrar.GetClientIdAsync(cancellationToken);
+
         var transport = new HttpClientTransport(
             new HttpClientTransportOptions
             {
@@ -35,13 +49,14 @@ internal sealed class McpUpworkSessionFactory(IOptions<UpworkMcpOptions> options
                 ConnectionTimeout = o.ConnectTimeout,
                 OAuth = new ClientOAuthOptions
                 {
-                    // No ClientId: Upwork advertises a registration endpoint, so the SDK registers the app itself.
-                    DynamicClientRegistration = new DynamicClientRegistrationOptions { ClientName = o.ClientName },
+                    // Pre-registered public client: the SDK skips its own registration (which Upwork rejects)
+                    // and authenticates at the token endpoint with client_id only, as Upwork advertises "none" first.
+                    ClientId = clientId,
                     RedirectUri = o.RedirectUri,
                     AuthorizationCallbackHandler = o.InteractiveSignIn
                         ? UpworkOAuth.SignInWithBrowserAsync
                         : UpworkOAuth.RejectInteractiveSignIn,
-                    TokenCache = new ProtectedFileTokenCache(o.TokenCachePath),
+                    TokenCache = new ProtectedFileTokenCache(TokenCachePath),
                 },
             },
             loggerFactory);
@@ -57,6 +72,8 @@ internal sealed class McpUpworkSessionFactory(IOptions<UpworkMcpOptions> options
             throw;
         }
     }
+
+    public void Dispose() => _registrationHttp.Dispose();
 }
 
 internal sealed class McpUpworkSession(McpClient client, HttpClientTransport transport) : IUpworkMcpSession

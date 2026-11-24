@@ -27,7 +27,7 @@ public static class SourceScanFailureTypes
 /// </summary>
 public sealed class UpworkSourceScanner(
     JobScoutDbContext db,
-    IUpworkMcpClient upwork,
+    IUpworkMcpClientProvider upworkClients,
     IOptionsMonitor<JobScoutScanOptions> options,
     TimeProvider time,
     ILogger<UpworkSourceScanner> logger)
@@ -43,7 +43,7 @@ public sealed class UpworkSourceScanner(
 
         if (source.Health == SourceHealth.Disabled)
         {
-            logger.LogInformation("Source {SourceId} is disabled; scan skipped", sourceId);
+            logger.LogInformation("Source {SourceName} ({SourceId}) is disabled; scan skipped", source.Name, sourceId);
             return new SourceScanResult(request.SourceId, NewJobs: 0, UpdatedJobs: 0);
         }
 
@@ -57,7 +57,7 @@ public sealed class UpworkSourceScanner(
 
         try
         {
-            var (pages, newestFirst) = OpenPages(profile, cutoff, cancellationToken);
+            var (pages, newestFirst) = OpenPages(upworkClients.GetClient(sourceId), profile, cutoff, cancellationToken);
             var seen = new HashSet<string>(StringComparer.Ordinal);
 
             await foreach (var page in pages)
@@ -86,15 +86,15 @@ public sealed class UpworkSourceScanner(
             await db.SaveChangesAsync(cancellationToken);
 
             logger.LogInformation(
-                "Scan {ScanId} of {SourceId}/{Profile} since {Cutoff:u}: {Observed} observed, {Created} new, {Updated} updated, {Unchanged} unchanged, {Queued} evaluations queued",
-                scan.Id, sourceId, profileId, cutoff, scan.ObservedCount, scan.CreatedCount, scan.UpdatedCount,
+                "Scan {ScanId} of {SourceName}/{Profile} since {Cutoff:u}: {Observed} observed, {Created} new, {Updated} updated, {Unchanged} unchanged, {Queued} evaluations queued",
+                scan.Id, source.Name, profileId, cutoff, scan.ObservedCount, scan.CreatedCount, scan.UpdatedCount,
                 scan.UnchangedCount, scan.EvaluationsQueuedCount);
 
             return new SourceScanResult(request.SourceId, scan.CreatedCount, scan.UpdatedCount);
         }
         catch (Exception ex)
         {
-            await RecordFailureAsync(scan.Id, sourceId, ex);
+            await RecordFailureAsync(scan.Id, sourceId, source.Name, ex);
             if (ex is UpworkMcpException upworkError)
                 throw upworkError.ToApplicationFailure();
             throw;
@@ -143,8 +143,8 @@ public sealed class UpworkSourceScanner(
         return floor;
     }
 
-    private (IAsyncEnumerable<UpworkJobSearchPage> Pages, bool NewestFirst) OpenPages(
-        UpworkSearchProfile profile, DateTimeOffset cutoff, CancellationToken cancellationToken)
+    private static (IAsyncEnumerable<UpworkJobSearchPage> Pages, bool NewestFirst) OpenPages(
+        IUpworkMcpClient upwork, UpworkSearchProfile profile, DateTimeOffset cutoff, CancellationToken cancellationToken)
     {
         if (profile.Search is { } search)
         {
@@ -245,12 +245,12 @@ public sealed class UpworkSourceScanner(
     /// Logs the failure (for Upwork failures, with the JSON sent and received), then, best effort and with a
     /// fresh change tracker, marks the scan failed and updates source health. Never masks the original exception.
     /// </summary>
-    private async Task RecordFailureAsync(Guid scanId, Guid sourceId, Exception exception)
+    private async Task RecordFailureAsync(Guid scanId, Guid sourceId, string sourceName, Exception exception)
     {
         if (exception is UpworkMcpException upworkError)
-            LogUpworkFailure(scanId, sourceId, upworkError);
+            LogUpworkFailure(scanId, sourceName, upworkError);
         else
-            logger.LogError(exception, "Scan {ScanId} of {SourceId} failed", scanId, sourceId);
+            logger.LogError(exception, "Scan {ScanId} of {SourceName} ({SourceId}) failed", scanId, sourceName, sourceId);
 
         try
         {
@@ -279,16 +279,16 @@ public sealed class UpworkSourceScanner(
     /// One structured entry with everything needed to diagnose the failure, including the received payload
     /// verbatim (<c>ResponseJson</c>) and, for format changes, the exact problems (<c>Issues</c>).
     /// </summary>
-    private void LogUpworkFailure(Guid scanId, Guid sourceId, UpworkMcpException error)
+    private void LogUpworkFailure(Guid scanId, string sourceName, UpworkMcpException error)
     {
         var retryable = error.Disposition is UpworkFailureDisposition.Retry or UpworkFailureDisposition.RetryAfter;
         var raw = error.Raw;
         logger.Log(
             retryable ? LogLevel.Warning : LogLevel.Error,
             error,
-            "Scan {ScanId} of {SourceId} failed ({Disposition}): {Error} Issues: {Issues} Request: {RequestJson} Received ({PayloadSource}, trace {TraceId}): {ResponseJson}",
+            "Scan {ScanId} of {SourceName} failed ({Disposition}): {Error} Issues: {Issues} Request: {RequestJson} Received ({PayloadSource}, trace {TraceId}): {ResponseJson}",
             scanId,
-            sourceId,
+            sourceName,
             error.Disposition,
             error.Message,
             error is UpworkContractMismatchException mismatch ? mismatch.Issues : Array.Empty<string>(),

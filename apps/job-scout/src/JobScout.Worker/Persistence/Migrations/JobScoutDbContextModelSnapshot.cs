@@ -172,6 +172,16 @@ namespace JobScout.Worker.Persistence.Migrations
                         .HasColumnType("character varying(24)")
                         .HasColumnName("health");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)")
+                        .HasColumnName("name");
+
+                    b.Property<string>("OAuthClientJson")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("oauth_client_json");
+
                     b.HasKey("Id");
 
                     b.ToTable("sources", "job_scout");

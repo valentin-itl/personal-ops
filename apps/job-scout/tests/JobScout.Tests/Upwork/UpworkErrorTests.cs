@@ -167,6 +167,27 @@ public class UpworkErrorTests
     }
 
     [Fact]
+    public async Task Rejected_client_registration_is_auth_required_not_transient()
+    {
+        // Exactly what ModelContextProtocol 2.4.0 throws when Upwork refuses dynamic client registration.
+        var fake = new FakeUpworkMcp
+        {
+            ConnectException = new McpException(
+                "Failed to handle unauthorized response with 'Bearer' scheme. Dynamic client registration failed with status BadRequest: " +
+                """{"error_description":"The client registration metadata is invalid","error":"invalid_client_metadata"}""" +
+                " (application_type: 'native', redirect_uri: 'http://localhost:53682/callback')."),
+        };
+        await using var client = fake.CreateClient(o => o.OrgUid = FakeUpworkMcp.OrgUid);
+
+        var ex = await Assert.ThrowsAsync<UpworkAuthRequiredException>(() => client.SearchJobsAsync(Search, Ct));
+
+        Assert.Equal(UpworkFailureDisposition.Pause, ex.Disposition);
+        Assert.Equal("CLIENT_REGISTRATION_REJECTED", ex.ErrorCode);
+        Assert.Contains("invalid_client_metadata", ex.Message);
+        Assert.True(ex.ToApplicationFailure().NonRetryable);
+    }
+
+    [Fact]
     public async Task Network_failure_on_connect_is_transient()
     {
         var fake = new FakeUpworkMcp { ConnectException = new HttpRequestException("no route to host") };

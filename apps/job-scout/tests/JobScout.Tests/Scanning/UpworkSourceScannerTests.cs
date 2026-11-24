@@ -56,6 +56,7 @@ public class UpworkSourceScannerTests
         var source = await db.Sources.SingleAsync(Ct);
         Assert.Equal(SourceHealth.Healthy, source.Health);
         Assert.Null(source.ErrorMessage);
+        Assert.All(h.RequestedSources, id => Assert.Equal(h.SourceId, id)); // the scanned source's own client
     }
 
     [Fact]
@@ -178,6 +179,7 @@ public class UpworkSourceScannerTests
 
         var logged = Assert.Single(h.Logs.Entries, e => e.Level == LogLevel.Error);
         Assert.Equal(broken, logged.Get("ResponseJson")); // verbatim, ready to export
+        Assert.Equal("Upwork (test)", logged.Get("SourceName"));
         Assert.Equal("trace-broken", logged.Get("TraceId"));
         Assert.Contains("$.jobs: required array is missing", (IEnumerable<string>)logged.Get("Issues")!);
         Assert.Contains("\"cursor\":\"p2\"", (string)logged.Get("RequestJson")!);

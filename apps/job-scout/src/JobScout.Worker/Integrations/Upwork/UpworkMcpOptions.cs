@@ -11,15 +11,16 @@ public sealed class UpworkMcpOptions
     public string? OrgUid { get; set; }
 
     /// <summary>
-    /// Where tokens and the registered client ID are kept between runs. Holds a refresh token for the Upwork
-    /// account; on Windows it is encrypted for the current user with DPAPI. Delete it to sign out.
+    /// Folder for OAuth tokens, one file per source (<c>upwork_tokens_{sourceId}.bin</c>), so each source signs in
+    /// once. A file holds a refresh token for the Upwork account; on Windows it is encrypted for the current user
+    /// with DPAPI. Delete a file to sign that source out. The OAuth client registration itself is kept on the source.
     /// </summary>
-    public string TokenCachePath { get; set; } = Path.Combine(
-        Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "JobScout", "upwork_tokens.bin");
+    public string TokenCacheDirectory { get; set; } = Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "JobScout");
 
     public Uri RedirectUri { get; set; } = new("http://localhost:53682/callback");
 
-    /// <summary>Client name used for OAuth dynamic client registration.</summary>
+    /// <summary>Client name shown on Upwork's consent screen; sent when a source registers its OAuth client.</summary>
     public string ClientName { get; set; } = "Personal Upwork job scanner";
 
     /// <summary>

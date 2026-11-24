@@ -1,5 +1,8 @@
+using JobScout.Worker.Integrations.Upwork;
 using JobScout.Worker.Integrations.Upwork.Models;
+using JobScout.Worker.Persistence;
 using JobScout.Worker.Scanning;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -31,6 +34,29 @@ public class ScanConfigurationAndFingerprintTests
         Assert.True(mcp.Search.IncludeFullDetails);
         Assert.Equal(3, mcp.MaxPages);
         Assert.Empty(mcp.Validate());
+    }
+
+    [Fact]
+    public void Worker_services_compose_with_scope_validation()
+    {
+        var configuration = new ConfigurationBuilder()
+            .AddJsonFile(Path.Combine(AppContext.BaseDirectory, "appsettings.json"))
+            .Build();
+        var services = new ServiceCollection()
+            .AddLogging()
+            .AddDbContext<JobScoutDbContext>(o => o.UseInMemoryDatabase(Guid.NewGuid().ToString()))
+            .AddUpworkMcpClient(configuration.GetSection(UpworkMcpOptions.SectionName))
+            .AddJobScanning(configuration);
+
+        using var provider = services.BuildServiceProvider(new ServiceProviderOptions { ValidateOnBuild = true, ValidateScopes = true });
+        using var scope = provider.CreateScope();
+
+        Assert.NotNull(scope.ServiceProvider.GetRequiredService<UpworkSourceScanner>());
+        Assert.IsType<SourceClientRegistrationStore>(provider.GetRequiredService<IUpworkClientRegistrationStore>());
+        var clients = provider.GetRequiredService<IUpworkMcpClientProvider>();
+        var source = Guid.NewGuid();
+        Assert.Same(clients.GetClient(source), clients.GetClient(source));
+        Assert.NotSame(clients.GetClient(source), clients.GetClient(Guid.NewGuid()));
     }
 
     [Fact]

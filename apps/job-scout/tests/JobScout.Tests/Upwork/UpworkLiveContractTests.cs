@@ -7,8 +7,9 @@ namespace JobScout.Tests.Upwork;
 
 /// <summary>
 /// Runs the client's contract checks against the real Upwork MCP server. Skipped unless
-/// <c>JOBSCOUT_UPWORK_LIVE=1</c>. Uses the normal token cache; set <c>JOBSCOUT_UPWORK_INTERACTIVE=1</c>
-/// to allow a browser sign-in when no token is cached. Read-only calls only.
+/// <c>JOBSCOUT_UPWORK_LIVE=1</c>. Set <c>JOBSCOUT_UPWORK_CLIENT_ID</c> to an already registered OAuth client
+/// (otherwise a new one is registered) and <c>JOBSCOUT_UPWORK_INTERACTIVE=1</c> to allow a browser sign-in when
+/// no token is cached. Tokens go to the normal token folder under a fixed test source id. Read-only calls only.
 /// </summary>
 public class UpworkLiveContractTests
 {
@@ -21,14 +22,17 @@ public class UpworkLiveContractTests
 
         var ct = TestContext.Current.CancellationToken;
         var output = TestContext.Current.TestOutputHelper;
-        var options = Options.Create(new UpworkMcpOptions
+        var options = new UpworkMcpOptions
         {
             InteractiveSignIn = Environment.GetEnvironmentVariable("JOBSCOUT_UPWORK_INTERACTIVE") == "1",
-        });
-        await using var client = new UpworkMcpClient(
-            new McpUpworkSessionFactory(options, NullLoggerFactory.Instance),
-            options,
-            NullLogger<UpworkMcpClient>.Instance);
+        };
+        var liveSourceId = new Guid("00000000-0000-0000-0000-00000000fade");
+        var registrations = new InMemoryRegistrationStore();
+        if (Environment.GetEnvironmentVariable("JOBSCOUT_UPWORK_CLIENT_ID") is { Length: > 0 } clientId)
+            registrations.Saved[liveSourceId] = UpworkClientRegistration.Parse($$"""{"client_id":"{{clientId}}"}""");
+
+        using var factory = new McpUpworkSessionFactory(options, registrations, liveSourceId, NullLoggerFactory.Instance);
+        await using var client = new UpworkMcpClient(factory, Options.Create(options), NullLogger<UpworkMcpClient>.Instance);
 
         var catalog = await client.VerifyToolsAsync(ct);
         Report("catalog", catalog.Warnings);

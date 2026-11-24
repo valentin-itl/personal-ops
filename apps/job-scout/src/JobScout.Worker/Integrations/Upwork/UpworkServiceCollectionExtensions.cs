@@ -7,14 +7,13 @@ namespace JobScout.Worker.Integrations.Upwork;
 public static class UpworkServiceCollectionExtensions
 {
     /// <summary>
-    /// Registers <see cref="IUpworkMcpClient"/> as a singleton (one MCP connection per process),
-    /// bound to the given configuration section (normally <c>Upwork</c>).
+    /// Registers <see cref="IUpworkMcpClientProvider"/> (one client and MCP connection per source), bound to the
+    /// given configuration section (normally <c>Upwork</c>). Needs an <see cref="IUpworkClientRegistrationStore"/>.
     /// </summary>
     public static IServiceCollection AddUpworkMcpClient(this IServiceCollection services, IConfiguration section)
     {
         services.AddOptions<UpworkMcpOptions>().Bind(section);
-        services.TryAddSingleton<IUpworkMcpSessionFactory, McpUpworkSessionFactory>();
-        services.TryAddSingleton<IUpworkMcpClient, UpworkMcpClient>();
+        services.TryAddSingleton<IUpworkMcpClientProvider, UpworkMcpClientProvider>();
         return services;
     }
 }
